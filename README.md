@@ -10,7 +10,7 @@ export ENV_NAME=test
 
 copilot app init $APP_NAME
 copilot svc init --name $SVC_NAME --app $APP_NAME --image nginx --port 80 --svc-type "Load Balanced Web Service"
-copilot env init --name $ENV_NAME --app $APP_NAME --profile default --default_config
+copilot env init --name $ENV_NAME --app $APP_NAME --profile default --default-config
 copilot env deploy --name $ENV_NAME
 copilot svc deploy --name $SVC_NAME --env $ENV_NAME
 ```
